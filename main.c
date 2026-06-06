@@ -1,27 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    float num1, num2;
+    float num3, num4;
     char op;
 
     printf("Enter first number: ");
-    scanf("%f", &num1);
+    scanf("%f", &num3);
 
     printf("Enter an operator (+, -, *, /): ");
     scanf(" %c", &op);
 
     printf("Enter second number: ");
-    scanf("%f", &num2);
+    scanf("%f", &num4);
 
     if (op == '+')
-        printf("Result = %.2f\n", num1 + num2);
+        printf("Result = %.2f\n", num3 + num4);
     else if (op == '-')
-        printf("Result = %.2f\n", num1 - num2);
+        printf("Result = %.2f\n", num3 - num4);
     else if (op == '*')
-        printf("Result = %.2f\n", num1 * num2);
+        printf("Result = %.2f\n", num3 * num4);
     else if (op == '/') {
-        if (num2 != 0)
-            printf("Result = %.2f\n", num1 / num2);
+        if (num4 != 0)
+            printf("Result = %.2f\n", num3 / num4 );
         else
             printf("Error: Division by zero is not allowed.\n");
     }
